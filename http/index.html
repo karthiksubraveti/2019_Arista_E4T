@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+   <link href="{{url_for('static', filename='styles/style.css')}}" type="text/css" rel="stylesheet">
+   <script type="text/javascript" src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
+</head>
+<body>
+<h1 align="center">Engineers for Tomorrow Workshop</h1>
+<h2 align="center">ARISTA Networks Inc.</h2>
+<table>
+    <thead>
+    <tr>
+       <th colspan="3">Foo fighters Name</th>
+    </tr>
+    </thead>
+    <tbody>
+       <form action=members.js id="members">
+       <tr>
+          <td><img id="uimg1" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage1" width="100" height="100"></td>
+             <td>
+                <label id="lb1">Enter Name 1 here</label>
+             </td>
+             <td>
+                <button onclick="capture('uimg1');" type="button" id="ubttn1" name="button1">Capture</button>
+             </td>
+       </tr>
+
+       <tr>
+          <td><img id="uimg2" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage2" width="100" height="100"></td>
+             <td>
+                <label id="lb2">Enter Name 2 here</label>
+             </td>
+             <td>
+                <button onclick="capture('uimg2');" type="button" id="ubttn2" name="button2">Capture</button>
+             </td>
+       </tr>
+       <tr>
+          <td id="log"></td>
+       </tr>
+       <!-- If you want to add a new member
+            Copy paste the following lines after the comment
+       <tr>
+          <td><img src=# alt="Member2" width="50" height="50"></td>
+          <td>Enter Name 2 here</td>
+             <td>
+                <button type="button" id="member2" name="member2">Capture</button>
+             </td>
+       </tr>
+       -->
+       <tr>
+             <td colspan="3">
+                <button type="button">Send</button>
+             </td>
+          </tr>
+       </form>
+     </tbody>
+  </table>
+</body>
