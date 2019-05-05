@@ -24,3 +24,9 @@ Instructions for Volunteers
     - Ask students to change src=# to the src=<http link> given in the comments on the webpage
     - Explain how to change the dimensions of an image, Ask them to change the width and height to a random value between 10 and 100.
 
+4) Open jstutorial.html
+    - This covers very basic java script
+    - Revisit what they learn, ask them where is the heading, where is the paragraph, where is the head and the body.
+    - Explain what getElementById does
+    - what myid stands for - It is an identifier like humans have name
+    - Ask them to change the text of the button and reload page.
