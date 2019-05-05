@@ -7,16 +7,16 @@ Instructions for Volunteers
    - HTML elements are the building blocks of HTML pages
    - <tagname>content goes here...</tagname>
    - HTML elements are represented by tags
-   - Example heading is a tag - Explain them what is a heading 
+   - Example heading is a tag - Explain them what is a heading
    - Ask students to change the color of the page
-       <body style="background-color:tomato;">
+     <body style="background-color:tomato;">
    - Ask them to change h1 to h2 or h3
    - Explain <!DOCTYPE html> tells browsers to display web pages
    
 2) Open page paragraph.html
     - This covers how to write a paragraph and format text( text colors and font size )
     - Ask students to change color of the first line (red) to a color of their choice and see the effects and change text
-            accordingly
+      accordingly
     - Ask students to change the font size to a value of their choice between 10 and 100 and reload page.
 3) Open page img.html
     - This covers how to display images in a web page
@@ -26,7 +26,7 @@ Instructions for Volunteers
 
 4) Open jstutorial.html
     - This covers very basic java script
-    - Revisit what they learn, ask them where is the heading, where is the paragraph, where is the head and the body.
+    - Revisit what they learnt, ask them where is the heading, where is the paragraph, where is the head and the body.
     - Explain what getElementById does
-    - what myid stands for - It is an identifier like humans have name
+    - What myid stands for - It is an identifier like humans have name
     - Ask them to change the text of the button and reload page.
