@@ -13,28 +13,24 @@
     </tr>
     </thead>
     <tbody>
-       <form action=members.js id="members">
        <tr>
           <td><img id="uimg1" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage1" width="100" height="100"></td>
              <td>
-                <label id="lb1">Enter Name 1 here</label>
+                <label>Enter Name 1 here</label>
              </td>
              <td>
-                <button onclick="capture('uimg1');" type="button" id="ubttn1" name="button1">Capture</button>
+                <button type="button" id="user1" name="button1">Capture</button>
              </td>
        </tr>
 
        <tr>
           <td><img id="uimg2" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage2" width="100" height="100"></td>
              <td>
-                <label id="lb2">Enter Name 2 here</label>
+                <label>Enter Name 2 here</label>
              </td>
              <td>
-                <button onclick="capture('uimg2');" type="button" id="ubttn2" name="button2">Capture</button>
+                <button type="button" id="user2" name="button2">Capture</button>
              </td>
-       </tr>
-       <tr>
-          <td id="log"></td>
        </tr>
        <!-- If you want to add a new member
             Copy paste the following lines after the comment
@@ -46,12 +42,10 @@
              </td>
        </tr>
        -->
-       <tr>
-             <td colspan="3">
-                <button type="button">Send</button>
-             </td>
-          </tr>
-       </form>
      </tbody>
   </table>
+  <script>
+  document.getElementById("user1").addEventListener("click", capture, false )
+  document.getElementById("user2").addEventListener("click", capture, false )
+  </script>
 </body>

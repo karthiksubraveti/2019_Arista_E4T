@@ -1,23 +1,32 @@
-function sendCaptureRequest(id) {
+function captureAndUpdateImage(imgObj, imageName) {
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = renderImage(xhttp, id)
-  URL = "http://localhost:1337/uimage/" + id
-  xhttp.open("POST", URL, true);
+  xhttp.onreadystatechange = function(){
+     if ( this.readyState == 4 && this.status == 200 ) {
+        var resp = JSON.parse(this.response)
+        renderImage(imgObj, resp);
+     }
+  }
+  URL = window.location.href + "capture/" + imageName
+
+  xhttp.open("GET", URL, true);
   xhttp.setRequestHeader("Content-type", "application/json");
   xhttp.send();
 }
 
-function renderImage( xhttp, id )
-      if (this.readyState == 4 && this.status == 200) {
-         filename = "images/" + id + ".jpg"
-         url = url_for("static", filename=filename")
-         alert(url)
-         document.getElementById(id).src=url
-      }
+function renderImage(imgObj, resp) {
+      var url = window.location.href + resp["url"]
+      imgObj.src=url
 }
 
-function capture(id) {
-     alert("Capture")
-     document.getElementById("log").innerHTML = "Clicked pic for " + id;
-     sendCaptureRequest(id) 
+function capture() {
+     var imageName = ""
+     var imgObj
+     if (this.id == "user1") {
+        imgObj = document.getElementById("uimg1")
+        imageName = "user1"
+     } else {
+        imgObj = document.getElementById("uimg2")
+        imageName = "user2"
+     }
+     captureAndUpdateImage(imgObj, imageName)
 }
