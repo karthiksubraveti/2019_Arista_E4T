@@ -1,0 +1,26 @@
+Instructions for Volunteers
+
+1) Open simple.html
+   - This covers the basic of a html page
+   - HTML stands for Hyper Text Markup Language
+   - HTML describes the structure of Web pages using markup
+   - HTML elements are the building blocks of HTML pages
+   - <tagname>content goes here...</tagname>
+   - HTML elements are represented by tags
+   - Example heading is a tag - Explain them what is a heading 
+   - Ask students to change the color of the page
+       <body style="background-color:tomato;">
+   - Ask them to change h1 to h2 or h3
+   - Explain <!DOCTYPE html> tells browsers to display web pages
+   
+2) Open page paragraph.html
+    - This covers how to write a paragraph and format text( text colors and font size )
+    - Ask students to change color of the first line (red) to a color of their choice and see the effects and change text
+            accordingly
+    - Ask students to change the font size to a value of their choice between 10 and 100 and reload page.
+3) Open page img.html
+    - This covers how to display images in a web page
+    - Explain that without a link the image can't be displayed. src means from where to get the image. In this class we are getting the image from the internet.
+    - Ask students to change src=# to the src=<http link> given in the comments on the webpage
+    - Explain how to change the dimensions of an image, Ask them to change the width and height to a random value between 10 and 100.
+
