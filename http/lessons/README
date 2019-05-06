@@ -1,22 +1,23 @@
 Instructions for Volunteers
+Run python -m SimpleHTTPServer in lessons directory.
+Open the html pages in Juypter notebook
 
 1) Open simple.html
-   - This covers the basic of a html page
+   - This covers the basics of a HTML page
    - HTML stands for Hyper Text Markup Language
    - HTML describes the structure of Web pages using markup
    - HTML elements are the building blocks of HTML pages
    - <tagname>content goes here...</tagname>
    - HTML elements are represented by tags
-   - Example heading is a tag - Explain them what is a heading
+   - Example: heading is a tag denoted by <h1></h1>
    - Ask students to change the color of the page
      <body style="background-color:tomato;">
-   - Ask them to change h1 to h2 or h3
-   - Explain <!DOCTYPE html> tells browsers to display web pages
+   - Ask them to change the heading from h1 to h2 or h3
+   - Explain what <!DOCTYPE html> is? Hint: directs browsers to display web pages
    
-2) Open page paragraph.html
-    - This covers how to write a paragraph and format text( text colors and font size )
-    - Ask students to change color of the first line (red) to a color of their choice and see the effects and change text
-      accordingly
+2) Open paragraph.html
+    - This covers how to write a paragraph and format text( text color and the font size )
+    - Ask students to change the color of the first line of text in red, to a color of their choice and see the effects and modify the text appropriately.
     - Ask students to change the font size to a value of their choice between 10 and 100 and reload page.
 3) Open page img.html
     - This covers how to display images in a web page
@@ -25,8 +26,9 @@ Instructions for Volunteers
     - Explain how to change the dimensions of an image, Ask them to change the width and height to a random value between 10 and 100.
 
 4) Open jstutorial.html
-    - This covers very basic java script
+    - This covers very basic javascript
     - Revisit what they learnt, ask them where is the heading, where is the paragraph, where is the head and the body.
     - Explain what getElementById does
     - What myid stands for - It is an identifier like humans have name
-    - Ask them to change the text of the button and reload page.
+    - Ask them to change the text of the button and reload the page.
+
