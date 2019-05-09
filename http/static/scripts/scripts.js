@@ -1,3 +1,6 @@
+// captureAndUpdateImage is called by capture function
+// This sends a Get request to the server and gets the
+// path of the image as response
 function captureAndUpdateImage(imgObj) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
@@ -5,6 +8,11 @@ function captureAndUpdateImage(imgObj) {
         try {
             resp = JSON.parse(this.response)
             resp2 = JSON.parse(resp)
+            
+            // ******* CHANGE 6 *******
+            // add alert(resp2) in the next line
+
+        
         } catch(err) {
             alert(err)
         }
@@ -18,11 +26,16 @@ function captureAndUpdateImage(imgObj) {
   xhttp.send();
 }
 
+// renderImage sets the src of the image object to the path returned
+// by the server.
 function renderImage(imgObj, resp) {
       var path = window.location.href + resp.basedir + "/" + resp.fname
       imgObj.src=path 
 }
 
+// capture checks which button triggered the event,
+// based on the owner, it will select which image object
+// to display the image into.
 function capture() {
      var imageName = ""
      var imgObj

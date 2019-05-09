@@ -1,0 +1,50 @@
+Project Instructions for Volunteers
+1) Go to http directory using the following command
+   cd http
+2) Run python server.py 14321
+3) On a web browser(preferable chrome) run http://localhost:14321
+4) Run "jupyter notebook &" under http directory. This will open a browser with
+the file list
+5) Jupyter will open a tab in your default browser.
+6) Use Juypter to make any modificatins to the files and don't forget to save
+NOTE: If you don't see the changes reflected after realoding the page, clear browser cache
+or start python server with a new port number
+
+
+Package pre-requisites:
+Flask package is needed to run the server
+
+Directory structure
+----------------------------------
+http/index.html --> Main html page
+http/server.py --> Web server code
+http/static -- > Contains the java script code and static images
+http/data --> This is where the server will store images after capture
+
+
+Project changes
+---------------------------------
+Changes main html page (http/index.html)
+1) "CHANGE 1": Ask students to select their team name and update in index.html 
+2) "CHANGE 2": Ask students to write the first team member's name
+3) "CHANGE 3": Ask students to create an image element
+4) "CHANGE 4": Ask students to create a label element with second team member's name
+5) "CHANGE 5": Ask students to create a button element
+Pause and see your changes in the web browser.
+NOTE: If you click "capture", web server will exit. For it to work CHANGE 9 is
+needed. (Hint: ret variable is uninitialized )
+
+Changes in javascript (http/static/scripts/scripts.js)
+6) "CHANGE 6": Ask students to add an alert message inside capture function
+Pause and see the effect of Alert text box ( reload your website and click capture )
+
+Changes in server code ( http/server.py )
+8) "CHANGE 8": Ask students to print the filePath
+9) "CHANGE 9": Ask students to call capture, directions are given in the file
+
+Once all the 9 steps are completed, time to test your website. 
+You have successfully completed the workshop!
+
+
+
+

@@ -9,42 +9,75 @@
 <table>
     <thead>
     <tr>
+        <!-- 
+            ********* CHANGE 1 *********
+            Replace 'Foo fighters Name' with your team name
+        -->
        <th colspan="3">Foo fighters Name</th>
     </tr>
     </thead>
     <tbody>
        <tr>
-          <td><img id="uimg1" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage1" width="320" height="240"></td>
+          <td>
+              <img id="uimg1" src="{{url_for('static', filename='images/e4t.jpg')}}" width="320" height="240">
+           </td>
              <td>
+                 <!-- 
+                    ******** CHANGE 2 ***********
+                    Enter your first team members name 
+                    Replace 'Enter Name1 here' with your team member's name
+                 -->
+                 
                 <label>Enter Name 1 here</label>
              </td>
              <td>
                 <button class="button" id="user1" name="button1">Capture</button>
              </td>
        </tr>
-
+       
        <tr>
-          <td><img id="uimg2" src="{{url_for('static', filename='images/e4t.jpg')}}" alt="UserImage2" width="320" height="240"></td>
-             <td>
-                <label>Enter Name 2 here</label>
+          <td>
+              <!-- 
+                ******  CHANGE 3  ****** 
+                1. Add an image element with the following attributes
+                   a) Attribute id with value "uimg2"
+                        id="uimg2" 
+                   b) Attribute src
+                        src="{{url_for('static', filename='images/e4t.jpg')}}"
+                   c) Attribute width
+                        width="320"
+                   d) Attribute height
+                        height="240"
+              Write code in the next line -->
+               
+           </td>
+           <td>
+                 <!--
+                 ******* CHANGE 4 *******
+                 2.Enter a label with inner text as your name (second member)
+                 Hint: <label>Text comes here</label>
+                 Write code in the next line-->
+               
+                
              </td>
              <td>
-                <button class="button" id="user2" name="button2">Capture</button>
+                 <!--
+                    ***** CHANGE 5 *******
+                    3. Add a button element with the following attributes
+                       b) Attribute class with value "button"
+                            class="button"
+                       c) Attribute id with value user2
+                            id="user2"
+                       d) Inner text as "Capture"
+                 Write code in the next line -->
+                 
              </td>
        </tr>
-       <!-- If you want to add a new member
-            Copy paste the following lines after the comment
-       <tr>
-          <td><img src=# alt="Member2" width="50" height="50"></td>
-          <td>Enter Name 2 here</td>
-             <td>
-                <button type="button" id="member2" name="member2">Capture</button>
-             </td>
-       </tr>
-       -->
      </tbody>
   </table>
   <script>
+      
+  // Event handlers for 'Capture' buttons
   document.getElementById("user1").addEventListener("click", capture, false )
   document.getElementById("user2").addEventListener("click", capture, false )
   </script>
