@@ -1,5 +1,4 @@
 # 2019_Arista_E4T
-repo for Arista E4T workshop
 This repo has the content for HTML and Python programming workshop for middle schoolers. The workshop runs for around 2 hours. 
 The plan is to go over HTML lessons followed by HTML project and Python lessons followed by Python project. 
 
