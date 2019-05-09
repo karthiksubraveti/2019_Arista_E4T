@@ -1,7 +1,7 @@
 Project Instructions for Volunteers
 1) Go to http directory using the following command
    cd http
-2) Run python server.py 14321
+2) Run "python server.py --port 14321". You can choose any port number.
 3) On a web browser(preferable chrome) run http://localhost:14321
 4) Run "jupyter notebook &" under http directory. This will open a browser with
 the file list
