@@ -44,5 +44,8 @@ function capture() {
      } else {
         imgObj = document.getElementById("uimg2")
      }
+
+     // ***** CHANGE 7 *******
+     // add alert("Capture called")
      captureAndUpdateImage(imgObj)
 }

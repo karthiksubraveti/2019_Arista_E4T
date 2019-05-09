@@ -35,7 +35,8 @@ NOTE: If you click "capture", web server will exit. For it to work CHANGE 9 is
 needed. (Hint: ret variable is uninitialized )
 
 Changes in javascript (http/static/scripts/scripts.js)
-6) "CHANGE 6": Ask students to add an alert message inside capture function
+6) "CHANGE 6": Ask students to add an alert message inside captureAndUpdateImage function
+7) "CHANGE 7": Ask students to add alert inside capture function
 Pause and see the effect of Alert text box ( reload your website and click capture )
 
 Changes in server code ( http/server.py )
