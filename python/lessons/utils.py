@@ -7,6 +7,7 @@ from mobilechelonian import Turtle
 def play_sound(fn):
     a = ipd.Audio( "%s.wav" % fn, autoplay=True)
     display(a)
+    time.sleep(2)
 
 def draw_something():
     t = Turtle()
