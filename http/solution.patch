@@ -1,0 +1,90 @@
+diff --git a/http/index.html b/http/index.html
+index 64506f0..d70b52c 100644
+--- a/http/index.html
++++ b/http/index.html
+@@ -13,7 +13,7 @@
+             ********* CHANGE 1 *********
+             Replace 'Foo fighters Name' with your team name
+         -->
+-       <th colspan="3">Foo fighters Name</th>
++       <th colspan="3">Team Alpha</th>
+     </tr>
+     </thead>
+     <tbody>
+@@ -28,7 +28,7 @@
+                     Replace 'Enter Name1 here' with your team member's name
+                  -->
+                  
+-                <label>Enter Name 1 here</label>
++                <label>John Pie</label>
+              </td>
+              <td>
+                 <button class="button" id="user1" name="button1">Capture</button>
+@@ -49,7 +49,7 @@
+                    d) Attribute height
+                         height="240"
+               Write code in the next line -->
+-               
++             <img id="uimg2" src={{url_for('static', filename='images/e4t.jpg')}} width="320" height="240"></img>
+            </td>
+            <td>
+                  <!--
+@@ -57,6 +57,7 @@
+                  2.Enter a label with inner text as your name (second member)
+                  Hint: <label>Text comes here</label>
+                  Write code in the next line-->
++                 <label> John Doe </label>
+                
+                 
+              </td>
+@@ -70,7 +71,7 @@
+                             id="user2"
+                        d) Inner text as "Capture"
+                  Write code in the next line -->
+-                 
++                 <button class=button id="user2"> Capture </button>
+              </td>
+        </tr>
+      </tbody>
+diff --git a/http/server.py b/http/server.py
+index e6fd714..b95be69 100644
+--- a/http/server.py
++++ b/http/server.py
+@@ -28,6 +28,7 @@ class Capture( Resource ):
+ 
+         '''
+         # ---Add code below ---
++        print(filePath)
+ 
+         '''  *********** CHANGE 9 **********
+             Call capture function
+@@ -42,7 +43,7 @@ class Capture( Resource ):
+                 ret = forward(100)
+         '''
+         # --- Add code below -----
+-
++        ret = capture(filePath)
+         if ret:
+             return {'basedir': dataDir, 'fname': imageName}, 200
+         else:
+diff --git a/http/static/scripts/scripts.js b/http/static/scripts/scripts.js
+index a3dec22..30558ca 100644
+--- a/http/static/scripts/scripts.js
++++ b/http/static/scripts/scripts.js
+@@ -11,7 +11,7 @@ function captureAndUpdateImage(imgObj) {
+             
+             // ******* CHANGE 6 *******
+             // add alert(resp2) in the next line
+-
++            alert(resp2)
+         
+         } catch(err) {
+             alert(err)
+@@ -46,6 +46,6 @@ function capture() {
+      }
+ 
+      // ***** CHANGE 7 *******
+-     // add alert("Capture called")
++     add alert("Capture called")
+      captureAndUpdateImage(imgObj)
+ }
