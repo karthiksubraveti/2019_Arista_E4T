@@ -75,4 +75,4 @@ if __name__ == '__main__':
     dataDirPath = os.path.join(os.getcwd(), dataDir)
     if not os.path.exists(dataDirPath):
         os.makedirs(dataDirPath)
-    app.run(port=args.port, debug=True)
+    app.run(host="0.0.0.0", port=args.port, debug=True)
