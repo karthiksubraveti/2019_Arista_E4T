@@ -3,7 +3,7 @@ from flask_restful import Api, Resource, reqparse
 import sys
 import os
 import argparse
-# TODO: Update the appropriate library
+import time
 from desktopcam import capture
 
 fileExt = ".png"
@@ -12,14 +12,11 @@ template_dir = os.path.abspath('./')
 app = Flask(__name__, template_folder=template_dir)
 app.config["CUSTOM_STATIC_PATH"] = "./data/"
 api = Api(app)
-i = 1
 
 class Capture( Resource ):
     def captureImg(self):
-        global i
-        fname = str(i)
+        fname = str(int(time.time()))
         imageName = fname + fileExt
-        i += 1
         filePath = os.path.join(app.root_path, dataDir, imageName)
 
         '''  ********** CHANGE 8 ************
