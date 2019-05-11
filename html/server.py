@@ -57,7 +57,7 @@ api.add_resource( Capture, '/capture' )
 
 @app.route("/data/<path:filename>")
 def getImage(filename):
-    print "Requesting", filename
+    print( "Requesting", filename )
     return send_from_directory(app.config["CUSTOM_STATIC_PATH"], filename )
 
 @app.route("/")
