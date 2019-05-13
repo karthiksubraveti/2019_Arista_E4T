@@ -1,18 +1,19 @@
 Project Instructions for Volunteers
 1) Go to http directory using the following command
    cd http
-2) Run "python server.py --port 14321". You can choose any port number.
-3) On a web browser(preferable chrome) run http://localhost:14321
-4) Run "jupyter notebook &" under http directory. This will open a browser with
-the file list
-5) Jupyter will open a tab in your default browser.
-6) Use Juypter to make any modificatins to the files and don't forget to save
+2) To install requirements run: python3 -m pip install -r requirements.txt
+3) Run "python3 server.py --port 14321". You can choose any port number.
+4) On a web browser(preferably chrome) run http://localhost:14321
+5) Run "jupyter notebook &". This will open a browser with
+the directory list
+6) Jupyter will also open a tab in your default browser.
+7) Use Juypter to make any modificatins to the files and don't forget to save
 NOTE: If you don't see the changes reflected after realoding the page, clear browser cache
 or start python server with a new port number
 
-
 Package pre-requisites:
 Flask package is needed to run the server
+run : python3 -m pip install -r html/requirements.txt
 
 Directory structure
 ----------------------------------
