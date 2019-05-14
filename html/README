@@ -1,6 +1,7 @@
 Project Instructions for Volunteers
-1) Go to http directory using the following command
-   cd http
+---------------------------------------------
+1) Go to html directory using the following command
+   cd html
 2) To install requirements run: python3 -m pip install -r requirements.txt
 3) Run "python3 server.py --port 14321". You can choose any port number.
 4) On a web browser(preferably chrome) run http://localhost:14321
@@ -12,20 +13,26 @@ NOTE: If you don't see the changes reflected after realoding the page, clear bro
 or start python server with a new port number
 
 Package pre-requisites:
-Flask package is needed to run the server
-run : python3 -m pip install -r html/requirements.txt
+---------------------------------
+---Flask:
+   Flask package is needed to run the server
+   run : python3 -m pip install -r html/requirements.txt
+--- Opencv:
+   if you are not using raspberry pie camera
+   and using your desktop's default camera
+   run : python3 -m pip install opencv
 
 Directory structure
 ----------------------------------
-http/index.html --> Main html page
-http/server.py --> Web server code
-http/static -- > Contains the java script code and static images
-http/data --> This is where the server will store images after capture
+html/index.html --> Main html page
+html/server.py --> Web server code
+html/static -- > Contains the java script code and static images
+html/data --> This is where the server will store images after capture
 
 
 Project changes
 ---------------------------------
-Changes main html page (http/index.html)
+Changes main html page (html/index.html)
 1) "CHANGE 1": Ask students to select their team name and update in index.html 
 2) "CHANGE 2": Ask students to write the first team member's name
 3) "CHANGE 3": Ask students to create an image element
@@ -35,12 +42,12 @@ Pause and see your changes in the web browser.
 NOTE: If you click "capture", web server will exit. For it to work CHANGE 9 is
 needed. (Hint: ret variable is uninitialized )
 
-Changes in javascript (http/static/scripts/scripts.js)
+Changes in javascript (html/static/scripts/scripts.js)
 6) "CHANGE 6": Ask students to add an alert message inside captureAndUpdateImage function
 7) "CHANGE 7": Ask students to add alert inside capture function
 Pause and see the effect of Alert text box ( reload your website and click capture )
 
-Changes in server code ( http/server.py )
+Changes in server code ( html/server.py )
 8) "CHANGE 8": Ask students to print the filePath
 9) "CHANGE 9": Ask students to call capture, directions are given in the file
 
